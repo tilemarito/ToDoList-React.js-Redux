@@ -1,4 +1,4 @@
-import { ACTIVE, ADD_TODO_LIST, ALL, CHECKBOX_TODO_LIST, COMPLETED, DELETE_TODO_LIST, EDIT_TODO_LIST } from "../actions/TodoAction"
+import { ACTIVE, ADD_TODOS, ALL, CHECKBOX_TODOS, COMPLETED, DELETE_TODOS, EDIT_TODOS } from "../actions/TodoAction"
 
 const initialState = {
     todoslist : [
@@ -22,22 +22,22 @@ const initialState = {
 
 const todoReducer = (state = initialState, action) => {
     switch(action.type){
-        case ADD_TODO_LIST:
+        case ADD_TODOS:
             return{
                 ...state,
                 todoslist: [...state.todoslist, action.payload]
             }
-        case CHECKBOX_TODO_LIST:
+        case CHECKBOX_TODOS:
             return{
                 ...state,
                 todoslist: state.todoslist.map((item) => (item.id === action.payload ? {...item, isDone: !item.isDone} : item))
             }
-        case DELETE_TODO_LIST:
+        case DELETE_TODOS:
             return{
                 ...state,
                 todoslist: state.todoslist.filter((item) => item.id !== action.payload)
             }
-        case EDIT_TODO_LIST:
+        case EDIT_TODOS:
             return{
                 ...state,
                 todoslist: state.todoslist.map((item) => (item.id === action.payload.id ? {...item, title: action.payload.title} : item))
