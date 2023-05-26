@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+.todo-list {
+    text-align: center;
+    font-family: 'Popins';
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.todo-list h1 {
+    font-size: 50px;
+    line-height: 50px
+}
+
+#form-todo{
+    display: flex;
+    justify-content: center;
+    gap: 12;
+}
+
+#form-todo input {
+    width: 550px;
+    height: 25px;
+    border-radius: 6px;
+    border: 2px solid black;
+    padding: 6px 12px;
+    font-size: 18px;
+}
+
+#form-todo button {
+    border-radius: 6px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    width: 80px;
+    margin-left: 8px;
+}
+
+#form-todo button:hover {
+    cursor: pointer;
+    background-color: deepskyblue;
+    transition-duration: 0.4s;
+}
+
+#btn-act {
+    display: flex;
+    justify-content: center;
+    margin: 35px auto;
+    gap: 22px;
+}
+
+#btn-act button {
+    width: 150px;
+    height: 35px;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    
+}
+
+#btn-act button:hover {
+    cursor: pointer;
+    transition-duration: 0.5s;
+    background-color: gray;
+    color: white;
+}
+
+#list-todo {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    border: solid gray;
+    margin: auto 400px;
+    background-color: azure;
+}
+
+#klik {
+    margin-top: 8px;
+    width: 32px;
+    height: 22px;
+}
+
+#change input {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 22px;
+}
+
+#change button {
+    width: auto;
+    height: 30px;
+}
+
+#todos {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    border: none;
+    margin: 10px 10px;
+    height: 25px;
+}
+
+#todos span {
+    font-size: 18px;
+}
+
+.btn-del {
+    height: 25px;
+    width: 80px;
+    margin: auto 2px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-edit {
+    height: 25px;
+    width: 80px;
+    margin: auto 2px;
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-del:hover {
+    cursor: pointer;
+    background-color: crimson;
+    transition-duration: 0.4s;
+}
+
+.btn-edit:hover {
+    cursor: pointer;
+    background-color: deepskyblue;
+    transition-duration: 0.4s;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1100px){
+    #list-todo{
+        margin: auto 200px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 900px){
+    #list-todo{
+        margin: auto 30px;
+    }  
+}
+
+@media screen and (max-width:720px){
+    #list-todo{
+        margin: auto 5px;
+    }   
+}
