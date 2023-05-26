@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { active, addTodos, all, checkboxTodos, completed, deleteTodos, editTodos } from "../redux/actions/todoAction"
+import { active, addTodos, all, checkboxTodos, completed, deleteTodos, editTodos } from "../redux/actions/TodoAction"
 import { useDispatch, useSelector } from "react-redux"
 import './style.css'
 

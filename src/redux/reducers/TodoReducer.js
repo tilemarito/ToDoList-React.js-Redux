@@ -1,4 +1,4 @@
-import { ACTIVE, ADD_TODO_LIST, ALL, CHECKBOX_TODO_LIST, COMPLETED, DELETE_TODO_LIST, EDIT_TODO_LIST } from "../actions/todoAction"
+import { ACTIVE, ADD_TODO_LIST, ALL, CHECKBOX_TODO_LIST, COMPLETED, DELETE_TODO_LIST, EDIT_TODO_LIST } from "../actions/TodoAction"
 
 const initialState = {
     todoslist : [
